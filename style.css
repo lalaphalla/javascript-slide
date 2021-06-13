@@ -1,0 +1,57 @@
+body, #slider, .wrap, .slide-content{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.wrap{position: relative;}
+
+.slide{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide1{background-image: url('img/pexels-ave-calvar-martinez-3839336.jpg');}
+.slide2{background-image: url('img/pexels-layla-yehia-3849373.jpg');}
+.slide3{background-image: url('img/pexels-layla-yehia-3849373.jpg');}
+
+.slide-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-content span{
+    font-size: 5rem;
+    color: #FFF;
+}
+
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left{
+    /* create arrow in css */
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #FFF transparent transparent;
+    left: 0;
+    margin-left: 30px;
+}
+
+#arrow-right{
+    /* create arrow in css */
+    border-width: 30px 0 30px 40px;
+    border-color: transparent  transparent transparent #FFF;
+    right: 0;
+    margin-right: 30px;
+}
